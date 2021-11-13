@@ -1,0 +1,13 @@
+.item-info{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 15px;
+  border: 3px solid black;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.name{
+  width: 60px;
+  text-align: left;
+}

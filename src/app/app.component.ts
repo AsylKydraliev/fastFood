@@ -1,6 +1,5 @@
 import {Component, Input} from '@angular/core';
 import {Item} from "./Shared/menu-item.modal";
-import {Event} from "@angular/router";
 
 @Component({
   selector: 'app-root',

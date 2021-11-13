@@ -1,0 +1,12 @@
+<div>
+  <h4>{{ title }}</h4>
+  <div>
+    <app-orders
+      *ngFor="let item of newItems; let i = index"
+      [name]="item.name"
+      [count]="item.count"
+      [price]="item.price"
+      (deleteOrder)="onDeleteOrder(i)"
+    ></app-orders>
+  </div>
+</div>
