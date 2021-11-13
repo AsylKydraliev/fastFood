@@ -2,20 +2,18 @@
   <div class="right-block">
     <h2>Order details</h2>
     <hr>
-    <app-order-info [newItems]="items"></app-order-info>
+    <app-order-info [newItems]="newItems"></app-order-info>
     <p>Total price: {{ totalPrice }}</p>
   </div>
   <div class="left_block">
     <h2>Menu items</h2>
     <hr>
-    <app-menu-items *ngFor="let item of items; let i = index"
-                    [icon]="item.icon"
-                    [name]="item.name"
-                    [price]="item.price"
-                    [count]="item.count"
-                    (newPrice)="getPrice(i)"
-                    (getCount)="getCount(i)"
-                    (addItem) ="onAddOrder($event)"
-    ></app-menu-items>
+      <app-menu-items *ngFor="let item of items; let i = index"
+                      [icon]="item.icon"
+                      [name]="item.name"
+                      [price]="item.price"
+                      [count]="item.count"
+                      (addItem)="getItem($event)"
+      ></app-menu-items>
   </div>
 </div>
