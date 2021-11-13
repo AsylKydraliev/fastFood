@@ -2,7 +2,9 @@
   <div class="right-block">
     <h2>Order details</h2>
     <hr>
-    <app-order-info></app-order-info>
+    <app-order-info [items]="items">
+
+    </app-order-info>
   </div>
   <div class="left_block">
     <h2>Menu items</h2>
@@ -11,6 +13,9 @@
                     [icon]="item.icon"
                     [name]="item.name"
                     [price]="item.price"
+                    [count]="item.count"
+                    (newPrice)="getPrice(i)"
+                    (getCount)="getCount(i)"
     ></app-menu-items>
   </div>
 </div>
