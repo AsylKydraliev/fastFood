@@ -2,9 +2,8 @@
   <div class="right-block">
     <h2>Order details</h2>
     <hr>
-    <app-order-info [items]="items">
-
-    </app-order-info>
+    <app-order-info [newItems]="items"></app-order-info>
+    <p>Total price: {{ totalPrice }}</p>
   </div>
   <div class="left_block">
     <h2>Menu items</h2>
@@ -16,6 +15,7 @@
                     [count]="item.count"
                     (newPrice)="getPrice(i)"
                     (getCount)="getCount(i)"
+                    (addItem) ="onAddOrder($event)"
     ></app-menu-items>
   </div>
 </div>
