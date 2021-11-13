@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+.left_block{
+  width: 48%;
+  text-align: center;
+  background-color: #EEDDFF;
+  border: 6px solid #7922CC;
+  border-radius: 25px;
+}
+.right-block{
+  width: 48%;
+  background-color: #EEDDFF;
+  border: 6px solid #7922CC;
+  border-radius: 25px;
+  text-align: center;
+}
